@@ -2,9 +2,9 @@ sum=1;
 img_output=true;
 [num,str] = xlsread('./nettingAnnotations_1.xlsx');
 
-asd= './image_out';
+sourceFolder= './image_out';
 
-filename=getAllFiles(asd,'*.JPG');
+filename=getAllFiles(sourceFolder,'*.JPG');
 filenamevec=[];
 for m=1:numel(filename)
     file=filename{m};
